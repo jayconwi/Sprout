@@ -5,10 +5,11 @@ an architectural design.
 - Implement more unit test scenarios
 - Implement SwaggerUI for API documentation
 - Separate the solution for the client ReactJS app
-- Add configurability in the appsettings or much better if database for hardcoded calculation figures
+- Add configurability for the hardcoded calculation figures in the appsettings or much better if it's in the database 
 - IdentityServer4 can be on a separate solution so that we can remove the auth responsibility in the API
-- I could've set up logs and AutoMapper 
+- Set up logs and AutoMapper 
 - Make the app cloud enabled for better scalability and monitoring
+- Add interface for the EmployeeService and UnitOfWork
 
 If I were to make this cloud enabled, here are some steps that I'd do
 - IdentityServer4 can be replaced to Microsoft Identity Platform and take advantage of MSAL
@@ -17,10 +18,8 @@ If I were to make this cloud enabled, here are some steps that I'd do
 - ReactJS app can be deployed to Azure App Services
 
 
-Apologies if I didn't included unit tests, I really have a tight schedule with my current project and can barely do coding exams but I hope you could consider me
+I apologize if I didn't include unit tests, I really have a tight schedule with my current project and can barely do coding exams but I hope you could consider me
 
-But if I were to implement unit tests, I'll use xUnit and use Moq to mock and test the EmployeeService, DataAccess and the Controller
+But if I were to implement unit tests, I'll use xUnit, NUnit or MSTest and use Moq to mock and test the .Business, .DataAccess and the API endpoints
 
-
-
-Note: node_modules is excluded, please run npm install
+Note: node_modules is excluded in this commit, please run npm install
